@@ -1,0 +1,41 @@
+<html lang="zh">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        This is the login page.
+
+        <!-- 这下面的src是pathname -->
+        <!-- <br/>是换行， {...}是替换标记 -->
+        <img src = "./showimg"/> <br/>
+        收到参数： email是{email} <br/>
+        收到参数： password是{pwd} 
+        <!-- <form action = "./login" method="get"> -->
+        <!-- POST为异步方式 -->
+        <form action = "./login" method="POST"> 
+            <table align="center">
+                <tr>
+                    <td>
+                        email:
+                    </td>
+                    <td>
+                        <input type="text" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        password:
+                    </td>
+                    <td>
+                        <input type="password" name="pwd">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <input type="submit" value = "login">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
