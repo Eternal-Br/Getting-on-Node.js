@@ -4,8 +4,8 @@ var mysql = require('mysql');
 // 直接连接到mySQL
 var connection = mysql.createConnection({
   host     : '127.0.0.1',
-  user     : 'user1',
-  password : 'hello',
+  user     : '*****',
+  password : '*****',
   database : 'test'
 });
  
@@ -38,7 +38,7 @@ connection.connect(function(err){
 
 // 批量插入数据
 // var userAddSql  ='insert into users (email, pwd, nickname) values(?, ?, ?)';
-// var param = [['bruce2@tsinghua.edu.cn', 'zh*$2019', 'zihan'], ['bruce1@tsinghua.edu.cn', 'zh*$2019', 'zihan']];
+// var param = [['bruce2@tsinghua.edu.cn', 'zh*$2019', 'nickname'], ['bruce1@tsinghua.edu.cn', 'zh*$2019', 'nickname']];
 // for (var i=0; i<param.length; i++){
 //     connection.query(userAddSql, param[i], function(err, rs){
 //         if(err){

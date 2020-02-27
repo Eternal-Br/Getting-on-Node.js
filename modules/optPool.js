@@ -5,8 +5,8 @@ function optPool(){
     this.flag = true; //是否连结过
     this.pool = mysql.createPool({
         host: '127.0.0.1',
-        user: 'user1',
-        password: 'hello',
+        user: '*****',
+        password: '****',
         database: 'test',
         port: '3306'
     });
